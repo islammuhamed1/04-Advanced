@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace ADV04
+namespace Advanced04
 {
 	internal class BoardMember : Employee
 	{
@@ -13,7 +12,7 @@ namespace ADV04
 		public void Resign()
 		{
 			OnEmployeeLayOff(new EmployeeLayOffEventArgs() { Cause = LayOffCause.Resigned });
-			Console.WriteLine($"{this}has been resigned");
+			Console.WriteLine($"{this} has been resigned");
 
 
 
