@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADV04
+namespace Advanced04
+
 {
 
 	public enum LayOffCause
@@ -79,7 +80,7 @@ namespace ADV04
 
 			}
 			else
-				Console.WriteLine($"EmployeeID={EmployeeID}, EmployeeName={Name} ");
+				Console.WriteLine($"EmployeeID={EmployeeID}, EmployeeName={Name} Still Here ");
 
 
 

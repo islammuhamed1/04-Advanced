@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADV04
+namespace Advanced04
 {
 	public class Department
 	{
@@ -25,8 +25,6 @@ namespace ADV04
 			{
 				Staff.Add(emp);
                 emp.EmployeeLayOff += this.RemoveStaff;
-
-				
 			}
 
 		}
@@ -35,8 +33,8 @@ namespace ADV04
 			if(sender is Employee emp && Staff.Contains(emp))
 			{
 				Staff.Remove(emp);
-				Console.WriteLine($"{emp} has been removed from Department {this.DeptName}");
-				Console.WriteLine($"the reason for laying off is {e.Cause}");
+				Console.WriteLine($"{emp} Removed From Dept: {this.DeptName}");
+				Console.WriteLine($"Because: {e.Cause}");
 			}
 			
 

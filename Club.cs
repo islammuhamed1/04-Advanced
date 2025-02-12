@@ -5,7 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADV04
+namespace Advanced04
+
 {
 	internal class Club
 	{
@@ -30,11 +31,11 @@ namespace ADV04
 		}
 		public void RemoveMember(object sender, EmployeeLayOffEventArgs e)
 		{
-			if (sender is Employee E && Members.Contains(E)&&e.Cause==LayOffCause.VacationStock)
+			if (sender is Employee emp && Members.Contains(E) && e.Cause==LayOffCause.VacationStock)
 			{
-				Members.Remove(E);
-				Console.WriteLine($"{E} has been removed from Department {this.ClubName}");
-				Console.WriteLine($"the reason for laying off is {e.Cause}");
+				Members.Remove(emp);
+				Console.WriteLine($"{emp} Removed From Club: {this.ClubName}");
+				Console.WriteLine($"Because: {e.Cause}");
 			}
 		}
 	}

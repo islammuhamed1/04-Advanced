@@ -1,4 +1,4 @@
-﻿namespace ADV04
+﻿namespace Advanced04
 {
     internal class Program
     {
@@ -6,34 +6,34 @@
         {
 			Employee Emp = new Employee()
 			{
-				Name = "Ahmed",
+            Name = "Islam",
 				EmployeeID = 10,
-				BirthDate = new DateTime(1999, 11, 29),
+            BirthDate = new DateTime(2002, 9, 28),
 				VacationStock = 10
 			};
 
 			Employee Emp2 = new Employee()
 			{
-				Name = "Rawan",
+            Name = "Hamada",
 				EmployeeID = 20,
-				BirthDate = new DateTime(1999, 11, 29),
+            BirthDate = new DateTime(1999, 12, 9),
 				VacationStock = 1
 			};
 
 			SalesPerson Sp = new SalesPerson()
 			{
-				Name = "Lina",
+            Name = "Hambozo",
 				EmployeeID = 30,
-				BirthDate = new DateTime(1997, 11, 29),
+            BirthDate = new DateTime(2005, 5, 7),
 				VacationStock = 20,
-				AchievedTarget = 5000
+            AchievedTarget = 7000
 			};
 			BoardMember BEmp = new BoardMember()
 			{
-				Name = "Aya",
+            Name = "Tolba",
 				EmployeeID = 40,
-				BirthDate = new DateTime(1997, 11, 29),
-				VacationStock = 20,
+            BirthDate = new DateTime(1988, 11, 29),
+            VacationStock = 10,
 			};
 
 			Department Dept01 = new Department()
@@ -44,8 +44,8 @@
 
 			Club C1 = new Club()
 			{
-				ClubID = 22,
-				ClubName = "Ay 7aga"
+            ClubID = 10,
+            ClubName = "Real Madrid"
 			};
 
 			Dept01.AddStaff(Emp);
@@ -57,17 +57,17 @@
 			Dept01.AddStaff(BEmp);
 			C1.AddMember(BEmp);
 
-			Emp2.BirthDate = new DateTime(1900, 11, 1);
-			Console.WriteLine("********************************");
+        Emp2.BirthDate = new DateTime(1905, 6, 15);
+        Console.WriteLine("--------------------------");
 			Emp.VacationStock -= 16;
-			Console.WriteLine("********************************");
+        Console.WriteLine("--------------------------");
 			Sp.CheckTarget(100);
-			Console.WriteLine("********************************");
+         Console.WriteLine("--------------------------");
 
 			BEmp.BirthDate = new DateTime(1900, 11, 1);
 			BEmp.Resign();
-			Console.WriteLine("********************************");
-
+            Console.WriteLine("--------------------------");
+            Console.ReadKey();
 
 		}
     }
